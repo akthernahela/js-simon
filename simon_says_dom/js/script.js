@@ -114,6 +114,6 @@ answersFormEl.addEventListener('submit', function (event) {
     if (totalCorrect > 0) {
         message += `Hai indovinato: ${correctGuesses.join(', ')}`;
     }
-    message += `I numeri da indovinare erano: ${randomNumbers.join(', ')}`;
+    message += `<br>I numeri da indovinare erano: ${randomNumbers.join(', ')}`;
     instructionsEl.innerHTML = message;
 });
