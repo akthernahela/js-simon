@@ -44,4 +44,7 @@ function generateRandomNumbersArrayFor() {
 //Genera i numeri
 const randomNumbers = generateRandomNumbersArrayFor(); 
 
-
+const numbersListEl = document.getElementById('numbers-list');
+const numbersListEl = document.getElementById('numbers-list');
+const numbersListEl = document.getElementById('numbers-list');
+const numbersListEl = document.getElementById('numbers-list');
