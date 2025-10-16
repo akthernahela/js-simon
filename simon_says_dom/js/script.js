@@ -60,3 +60,13 @@ const btn = document.createElement("button");
 btn.innerHTML = "Hello Button";
 document.body.appendChild(btn);
 */
+/*
+The forEach() method calls a function for each element in an array.
+The forEach() method is not executed for empty elements.
+**array.forEach(function(currentValue, index, arr), thisValue)**
+*/
+randomNumbers.forEach(number => {
+    const listItem = document.createElement('li');
+    listItem.textContent = number;
+    numbersListEl.append(listItem);
+});
