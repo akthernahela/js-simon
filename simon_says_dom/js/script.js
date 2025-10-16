@@ -48,3 +48,6 @@ const numbersListEl = document.getElementById('numbers-list');
 const answersFormEl = document.getElementById('answers-form');
 const countdownEl = document.getElementById('countdown');
 const instructionsEl = document.getElementById('instructions');
+
+//Come far visualizzare i numeri 
+//Genero una lista per visualizzare i numeri
