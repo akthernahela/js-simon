@@ -51,3 +51,12 @@ const instructionsEl = document.getElementById('instructions');
 
 //Come far visualizzare i numeri 
 //Genero una lista per visualizzare i numeri
+
+//Document createElement()
+//Esempio
+//Create a button:
+/*
+const btn = document.createElement("button");
+btn.innerHTML = "Hello Button";
+document.body.appendChild(btn);
+*/
