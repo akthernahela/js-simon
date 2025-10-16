@@ -111,4 +111,9 @@ answersFormEl.addEventListener('submit', function (event) {
     answersFormEl.classList.add('d-none');
     const totalCorrect = correctGuesses.length;
     let message = `Hai indovinato ${totalCorrect} numeri su 5.`;
+    if (totalCorrect > 0) {
+        message += `Hai indovinato: ${correctGuesses.join(', ')}`;
+    }
+    message += `I numeri da indovinare erano: ${randomNumbers.join(', ')}`;
+    instructionsEl.innerHTML = message;
 });
