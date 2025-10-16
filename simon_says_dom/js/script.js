@@ -42,7 +42,7 @@ function generateRandomNumbersArrayFor() {
 }
 
 //Genera i numeri
-const randomNumbers = generateRandomNumbersArrayFor(); 
+const randomNumbers = generateRandomNumbersArrayFor();
 
 const numbersListEl = document.getElementById('numbers-list');
 const answersFormEl = document.getElementById('answers-form');
@@ -73,3 +73,7 @@ randomNumbers.forEach(number => {
 
 //Imposto il timer di 30 secondi
 let timeLeft = 30;
+//setInterval
+const timer = setInterval(() => {
+    countdownEl.textContent = `Tempo: ${timeLeft}s`;
+});
