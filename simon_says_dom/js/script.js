@@ -92,5 +92,11 @@ const timer = setInterval(() => {
 //addEventListener(answers-form) (input-group)
 answersFormEl.addEventListener('submit', function(event) {
     event.preventDefault();
-    const inputElements = document.querySelectorAll('input-group input[type="number"]');
+    const inputElements = document.querySelectorAll('#input-group input[type="number"]');//Remember the #
+    const userAnswers = [];
+    inputElements.forEach(input => {
+        //Raccolgo solo i numeri validi
+        const number = parseInt(input.value);
+        if (!isNaN(number)) userAnswers.push(number);//isNaN() method returns true if a value is NOT A NUMBER 
+        });
 });
