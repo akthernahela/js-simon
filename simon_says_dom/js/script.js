@@ -77,5 +77,13 @@ let timeLeft = 30;
 const timer = setInterval(() => {
     countdownEl.textContent = `Tempo: ${timeLeft}s`;
     if (timeLeft <= 0) {
-        clearInterval(timer);}
+        clearInterval(timer);
+        //The classList property returns the CSS classnames of an element.
+        //The classList property returns a DOMTokenList.
+        //Esempio (element.classList)
+        numbersListEl.classList.add('d-none');
+        countdownEl.classList.add('d-none');
+        instructionsEl.textContent = "Inserisci i numeri che ricordi.";
+        answersFormEl.classList.remove('d-none');
+    }
 });
