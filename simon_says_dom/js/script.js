@@ -76,4 +76,6 @@ let timeLeft = 30;
 //setInterval
 const timer = setInterval(() => {
     countdownEl.textContent = `Tempo: ${timeLeft}s`;
+    if (timeLeft <= 0) {
+        clearInterval(timer);}
 });
