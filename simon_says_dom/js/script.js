@@ -90,7 +90,7 @@ const timer = setInterval(() => {
 }, 1000); //Esegue la funzione ogni 1000 millisecondi
 
 //addEventListener(answers-form) (input-group)
-answersFormEl.addEventListener('submit', function(event) {
+answersFormEl.addEventListener('submit', function (event) {
     event.preventDefault();
     const inputElements = document.querySelectorAll('#input-group input[type="number"]');//Remember the #
     const userAnswers = [];
@@ -98,5 +98,13 @@ answersFormEl.addEventListener('submit', function(event) {
         //Raccolgo solo i numeri validi
         const number = parseInt(input.value);
         if (!isNaN(number)) userAnswers.push(number);//isNaN() method returns true if a value is NOT A NUMBER 
-        });
+    });
+    //Confronto i numeri
+    const correctGuesses = [];
+    userAnswers.forEach(answer => {
+        //x&&y (AND)
+        if (randomNumbers.includes(answer) && !correctGuesses.includes(answer)) {
+            correctGuesses.push(answer);
+        }
+    });
 });
