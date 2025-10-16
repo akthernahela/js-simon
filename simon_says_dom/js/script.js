@@ -107,4 +107,8 @@ answersFormEl.addEventListener('submit', function (event) {
             correctGuesses.push(answer);
         }
     });
+    //Risultato
+    answersFormEl.classList.add('d-none');
+    const totalCorrect = correctGuesses.length;
+    let message = `Hai indovinato ${totalCorrect} numeri su 5.`;
 });
