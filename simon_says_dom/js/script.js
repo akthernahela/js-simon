@@ -24,3 +24,15 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/* JS Math-->JS Random
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;*/
+
+//Uso un (ciclo for)
+
+function generateRandomNumbersArrayFor() {
+    const numbers = [];
+}
+
+
+
