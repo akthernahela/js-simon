@@ -70,3 +70,6 @@ randomNumbers.forEach(number => {
     listItem.textContent = number;
     numbersListEl.append(listItem);
 });
+
+//Imposto il timer di 30 secondi
+
