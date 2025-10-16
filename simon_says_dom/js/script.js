@@ -86,4 +86,5 @@ const timer = setInterval(() => {
         instructionsEl.textContent = "Inserisci i numeri che ricordi.";
         answersFormEl.classList.remove('d-none');
     }
+    timeLeft--;
 });
