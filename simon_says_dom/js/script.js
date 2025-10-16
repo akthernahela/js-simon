@@ -72,4 +72,4 @@ randomNumbers.forEach(number => {
 });
 
 //Imposto il timer di 30 secondi
-
+let timeLeft = 30;
