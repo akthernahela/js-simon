@@ -33,8 +33,12 @@ function getRndInteger(min, max) {
 function generateRandomNumbersArrayFor() {
     const numbers = [];
     for (let i = 0; numbers.length < 5; i++) {
-        const newNumber = getRandomNumber(1, 100);  
+        const newNumber = getRandomNumber(1, 100);
+        if (!numbers.includes(newNumber)) {
+            numbers.push(newNumber);
+        }
     }
+     return numbers; 
 }
 
 
