@@ -45,6 +45,6 @@ function generateRandomNumbersArrayFor() {
 const randomNumbers = generateRandomNumbersArrayFor(); 
 
 const numbersListEl = document.getElementById('numbers-list');
-const numbersListEl = document.getElementById('numbers-list');
-const numbersListEl = document.getElementById('numbers-list');
-const numbersListEl = document.getElementById('numbers-list');
+const answersFormEl = document.getElementById('answers-form');
+const countdownEl = document.getElementById('countdown');
+const instructionsEl = document.getElementById('instructions');
