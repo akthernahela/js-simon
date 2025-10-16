@@ -89,7 +89,8 @@ const timer = setInterval(() => {
     timeLeft--;
 }, 1000); //Esegue la funzione ogni 1000 millisecondi
 
-//addEventListener(answers-form)
+//addEventListener(answers-form) (input-group)
 answersFormEl.addEventListener('submit', function(event) {
     event.preventDefault();
+    const inputElements = document.querySelectorAll('input-group input[type="number"]');
 });
