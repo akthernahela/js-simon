@@ -38,8 +38,10 @@ function generateRandomNumbersArrayFor() {
             numbers.push(newNumber);
         }
     }
-     return numbers; 
+    return numbers;
 }
 
+//Genera i numeri
+const randomNumbers = generateRandomNumbersArrayFor(); 
 
 
