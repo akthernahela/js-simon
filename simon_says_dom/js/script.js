@@ -87,4 +87,4 @@ const timer = setInterval(() => {
         answersFormEl.classList.remove('d-none');
     }
     timeLeft--;
-});
+}, 1000); //Esegue la funzione ogni 1000 millisecondi
